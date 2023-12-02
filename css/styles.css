@@ -322,12 +322,15 @@
   .certificate_text{
     text-align: center;
     color: white;
-    padding-top: 8%;
+    padding-top: 6%;
     padding-bottom: 10%;
 
   }
   .inputb{
     padding-top: 2%;
+    position: absolute;
+    width: 100%;
+    border-radius: 2px solid black;
   }
   .clouds{
     position: absolute;
