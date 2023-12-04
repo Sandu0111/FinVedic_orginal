@@ -1,24 +1,37 @@
+.text_head{
+  width: 100%;
+  height: 60vh;
+  margin-top: 2%;
+ 
+}
+.text_white{
+  font-family: 'Playfair Display', serif;
+  font-size: 5vw;
+  color: white;
+  margin-top: 3.5%;
+}
+
 .button_contact{
     border: 1px solid  #C04BE2;
     background: transparent; 
     color: white;
-    padding: 4px 12px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    border-radius: 16px;
+    border-radius: 30px;
   }
   .button_enroll{
     border: 1px solid  #C04BE2;
     background: linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%) !important;
     color: white;
-    padding: 4px 12px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    border-radius: 16px;
+    border-radius: 30px;
   }
 .button_contact:hover{
     background: linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%) !important;
@@ -57,21 +70,30 @@
 .bcar{
   position: relative;
  width: 80%;
- height: 70%;
- border: 2px solid black;
+ height: 50%;
+ border: 2px solid transparent;
  margin-right: auto;
  margin-left: auto;
- margin-top: 6%;
 }
 .image_overlap{
     position: absolute;
     top: 0%;
-    right: 0%;
-    border: 2px solid green;
+    right: 10%;
     z-index: 3;
     width: 100%;
     height: 30%;
     text-align: right;
+}
+.lander1{
+  position: absolute;
+  top: 0%;
+  left: 10%;
+}
+.lander2{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: 3;
 }
 .overlap_img{
   max-height: 100%;
@@ -164,6 +186,7 @@
   .card:hover:after {
     transform: translateX(100%);
   }
+  
   .os__wrapper {
     display: flex !important;
   }
@@ -177,8 +200,7 @@
     gap: 0.5rem;
   }
   .os__text-item {
-    color: hotpink;
-    text-transform: uppercase;
+    color: white;
     font-family: sans-serif;
     font-weight: 600;
     opacity: 0.2;
@@ -201,10 +223,10 @@
     }
   }
   .slideshow-container {
-    max-width: 80%;
+    max-width: 65%;
     max-height: fit-content;
     position: relative;
-    margin-top: 15%;
+    margin-top:10%;
     margin-right: auto;
     margin-left: auto;
     border-radius: 30px;
@@ -354,3 +376,51 @@
     top: 50%;
     right: 0%;
   }
+  .student_slider{
+    display: flex;
+    position: relative;
+  }
+  .first_half_fv{
+    width: 50%;
+    position: relative;
+
+  }
+  .second_half_fv{
+    width: 50%;
+
+    position: relative;
+  }
+  .vertical_slider{
+    height: 100%;
+    width: 100%;
+
+  }
+  .vs_text_one{
+    position: absolute;
+    top: 1%;
+    left: 15%;
+
+  }
+  .vs_text_two{
+    position: absolute;
+    top: 32%;
+    left: 15%;
+
+  }
+  .vs_text_three{
+    position: absolute;
+    top: 62%;
+    left: 15%;
+
+  }
+  .student_box{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    height: 18%;
+    width: 54%;
+    left: 23%;
+  }
+  
