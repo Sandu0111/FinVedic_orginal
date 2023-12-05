@@ -33,6 +33,17 @@
     cursor: pointer;
     border-radius: 30px;
   }
+  .button_enroll2{
+    border: 1px solid  #C04BE2;
+    background: linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%) !important;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 30px;
+  }
 .button_contact:hover{
     background: linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%) !important;
 }
@@ -683,4 +694,90 @@
 @keyframes scrollText {
   from   { transform: translateX(0%); }
   to { transform: translateX(-50%); }
+}
+.company_logo_slider {
+  background-color: white;
+  width: 80%;
+  display: grid;
+  margin: 0;
+  place-items: center;
+  border-radius: 60px;
+}
+
+.image-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* outline: 1px solid red; */
+}
+
+.logo-container {
+  /* outline: 1px solid; */
+  width: 100%;
+  padding-top:2%;
+  padding-bottom:2%;
+  display: flex;
+}
+
+.left-arrow,
+.right-arrow {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  flex: 1;
+  /* outline: 1px solid; */
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(165, 165, 165)
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  color: blue;
+}
+
+.slide_dots {
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 3%;
+  /* outline: 1px solid; */
+  display: flex;
+  gap: 1em;
+}
+
+.slide_dot {
+  height: 10px;
+  width: 10px;
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+}
+
+.slide_dot.selected {
+  background-color: blue;
+}
+
+.img-logo-container {
+  display: flex;
+
+  width: 90%;
+  margin-left: 5%;
+  border: 5px solid white;
+  overflow-x: hidden;
+}
+
+.img-logo-container img {
+  flex: 1 0 60%;
+  object-fit: cover;
+}
+
+.hidden-img {
+  display: none;
+}
+.footer3{
+  background-color: #221576;
+  margin-left: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 30px;
 }

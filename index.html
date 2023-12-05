@@ -20,6 +20,12 @@
       height: 145vh;
       background-repeat: no-repeat;
     }
+    .footer-image {
+      background-image: url('assets/Ellipse 43.png');
+      background-size: 100% 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+    }
     .banner-white-box{
       background-image: url(assets/White_square.png);
       background-size: 100% 100%;
@@ -605,12 +611,87 @@
   <div class="container" style="text-align: center;">
   <p>Source: www.cbinsights.com/research/report/top-fintech-startups-2022</p>
   </div>
-  <div class="container" style="text-align: center;">
-    <img src="assets/Rectangle 164.png" alt="" style="width: 80%;">
+  <div class="container" style="text-align: center; padding-top: 2%;">
+    <div class="company_logo_slider" style="margin-left: 10%;">
+      <h3 style="padding-top: 2%;">Payments processing and Network</h3>
+      <div class="image-carousel">
+          <div class="logo-container">
+            <div class="left-arrow" style="display: none;">&lt</div>
+            <div class="img-logo-container">
+              <img
+                src="image-1.jpg"
+                alt="" width="100%">
+              <img src="image-2.jpg"
+              alt="" width="100%">
+              <img src="image-3.jpg"
+              alt="" width="100%">
+              <img src="image-4.jpg"
+              alt="" width="100%">
+              <img src="image-5.jpg"
+              alt="" width="100%">
+            </div>
+            <div class="right-arrow" style="display: none;">&gt</div>
+          </div>
+          <div class="slide_dots">
+          </div>
+        </div>
+         </diV>
   </div>
-  <div class="footer" style="padding-top: 7%;">
-    <img src="assets/Ellipse 43.png" alt="" width="100%">
+  <div style="padding-top: 7%;">
+  <div class="footer-image" style="padding-top: 7%;">
+    <div class="container" style="text-align: center;color: #fff;">
+      <h4>Follow Us</h4>
+      <div style="display: flex;">
+          <div  style="margin-left: auto;"><h1>LinkedIN</h1></div>
+          <div style="margin-left: auto;"><h1>Facebook</h1></div>
+          <div style="margin-right: auto;margin-left: auto;"><h1>Instagram</h1></div>
+          <div style="margin-right: auto;"><h1>Threads</h1></div>
+      </div>
+    </div>
+    <div class="container" style="width: 100% !important;display:flex;padding-top: 5%;">
+        <div class="footer1">
+          <img src="assets/logo_long.svg" alt="">
+          <p style="color: #fff; padding-top: 5%;" >RENT A DESK,Hitech City RAM SVR,Plot No4/2<br>Sector 1,Madhapur,HuDA Techno Enclave,<br>HITECH City,Hyderabad,Telangana 500081</p>
+          <p style="color: #fff; padding-top: 5%;" >+91 9908011843 &nbsp support@finvedic.com</p>
+        </div>
+        <div class="footer2" style="display: flex;color: #fff;margin-left: auto;">
+            <div class="partA">
+              <p>Home</p>
+              <p>Courses</p>
+              <p>Bootcamp</p>
+            </div>
+            <div class="partB">
+              <p>External</p>
+              <p>About Us</p>
+              <p>Career</p>
+            </div>
+        </div>
+        <div class="footer3">
+          <h5 style="color: #fff;padding-top: 10%;text-align: center; ">Subscribe to our news letter</h5>
+          <div>
+          <input type="text" style="border: none;
+          outline: none;background-color: transparent;width: 100%;padding-top: 5%;
+          border-bottom: 1px solid #ccc;" placeholder="Name">
+          </div>
+          <div style="padding-top: 5%;">
+          <input type="text" style="border: none;
+          outline: none;background-color: transparent;width: 100%;padding-top: 5%;
+          border-bottom: 1px solid #ccc;" placeholder="Email ID">
+          </div>
+          <div style="padding-top: 5%;padding-left: 30%;padding-bottom: 5%;">
+            <button class="button_enroll2" style="">Enroll Now</button>
+          </div>
+          <p style="color: #fff;">Yes, I agree to terms and priivacy policy</p>
+
+        </div>
+    </div>
+    <div style="color: #fff;text-align: center;padding-top: 4%;padding-bottom: 2%;">
+      <p>Terms & Condition &nbsp | &nbsp Privacy policy &nbsp | &nbsp All rights reserved @ FinVedic 2023</p>
+  
+    </div>
   </div>
+ 
+</div>
 </div>
 
 <script>
@@ -691,6 +772,91 @@ function showSlides() {
 
 
 //  showSlidesCurrent(slideIndexCurrent);
+</script>
+<script>
+  const ImgElements = document.querySelectorAll('.image-carousel img');
+const imgCount = ImgElements.length;
+const nextBtn = document.querySelector('.image-carousel .right-arrow');
+const prevBtn = document.querySelector('.image-carousel .left-arrow');
+let currentImg, currentDot;
+let imgIndex;
+const dotContainer = document.querySelector('.image-carousel .slide_dots');
+
+function initialiseCarousel() {
+    //make all images except the first one hidden
+    ImgElements.forEach(element => {
+        element.classList.add('hidden-img');
+    });
+    currentImg = ImgElements[0];
+    imgIndex = 0;
+    currentImg.classList.remove('hidden-img');
+
+    //create dots and select only the first one
+    for (let i = 0; i < imgCount; i++) {
+        let dot = document.createElement('div');
+        dot.classList.add('slide_dot');
+        dot.setAttribute('data-index', i);
+        dotContainer.appendChild(dot);
+    }
+    currentDot = dotContainer.querySelector('.slide_dot');
+    currentDot.classList.add('selected');
+}
+initialiseCarousel();
+
+const allDots = dotContainer.querySelectorAll('.slide_dot');
+
+function updateImg() {
+    currentImg.classList.add('hidden-img');
+    currentImg = ImgElements[imgIndex];
+    currentImg.classList.remove('hidden-img');
+}
+function updateDot() {
+    currentDot.classList.remove('selected');
+    currentDot = allDots[imgIndex];
+    currentDot.classList.add('selected');
+}
+
+function changeToRightImage(moveRight = true) {
+    if (moveRight) {
+        imgIndex = (imgIndex + 1) % imgCount;
+    } else {
+        imgIndex--;
+        if (imgIndex < 0) {
+            imgIndex += imgCount;
+        }
+    }
+
+    updateImg();
+    updateDot();
+}
+
+nextBtn.addEventListener('click', e => {
+    e.preventDefault();
+    changeToRightImage();
+
+});
+
+prevBtn.addEventListener('click', e => {
+    e.preventDefault();
+    changeToRightImage(false);
+
+})
+
+allDots.forEach(dot => {
+    dot.addEventListener('click', e => {
+        let dotIndex = 0;
+        let dotElement = e.target;
+        while (!dotElement.isEqualNode(allDots[dotIndex])) {
+            dotIndex++;
+        }
+        console.log(dotIndex);
+        imgIndex = dotIndex;
+        updateImg();
+        updateDot();
+    });
+});
+
+setInterval(changeToRightImage, 3000);
 </script>
 </body>
 </html>
