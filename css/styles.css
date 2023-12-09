@@ -574,6 +574,7 @@
     transform: translate3d(35%, 0, -120px);
     --current-color1: #ECEAED;
     --current-color2: #404457;
+    
 }
 
 #s1:checked~.books_cards #slide3,
