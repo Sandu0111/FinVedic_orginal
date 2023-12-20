@@ -15,9 +15,10 @@
 <title>FinVedic</title>
 <style>
     .banner-image {
-      background-image: url('assets/background_banner.png');
+      position: relative;
+      background-image: url('assets/background_landing.png');
       background-size: 100% 100%;
-      height: 145vh;
+      height: 160vh;
       background-repeat: no-repeat;
     }
     .footer-image {
@@ -30,7 +31,7 @@
       background-image: url(assets/White_square.png);
       background-size: 100% 100%;
       background-repeat: no-repeat;
-  
+      position: relative;
       width: 60%; 
       margin-left: 20%;
     }
@@ -40,14 +41,33 @@
       margin-top: 2%;
       padding: 1%;
       background-repeat: no-repeat;
-      width: 80%; 
-      margin-left: 10%;
-      border-radius: 30px;
+      width: 86%; 
+      margin-left: 7%;
+      border-radius: 10px;
     }
+  .underline{
+  position: relative;
+  background:  linear-gradient(#6B54F7, #C04BE2 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .underline:after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left:0;
+  height: 10px;
+  width: 100%;
+  background-image: url(assets/underline_lp.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
     
   </style>
 </head>
 <body>
+  <!--NAVIGATION BAR//HOME-->
     <div class="home">
         <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #0A004B;">
             <div class="container">
@@ -89,12 +109,16 @@
              
             </div>
           </nav>
+<!--LANDING PAGE-->
     <div
     class="banner-image d-flex justify-content-center">
+    <div class="landing_bg">
+      <img src="assets/landing_img.png" alt="" width="100%">
 
+    </div>
     <div class="content text-center">
       <div class="text_head">
-      <h1 class="text_white">Join Learn & Accelerate<br>Supercharge your<br> career with Finvedic!</h1>
+      <h1 class="text_white"><span class="underline">Join</span> Learn & Accelerate<br>Supercharge your<br> career with <span class="text_gradient">Finvedic!</span></h1>
       <div class="row" style="margin-top: 3%;">
         <div class="col" style="text-align: right;">
           <button class="button_enroll">Enroll Now</button>
@@ -132,7 +156,7 @@
         
         </div>
         <br>
-        <div style="text-align:center">
+        <div style="text-align:center ;padding-top: 3%;">
           <span class="dot active" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
@@ -143,27 +167,53 @@
     </div>
     
 </div>
-<div class="container pt-4">
+<!--Finance and Technology Section-->
+<div class="" style="width: 100% !important; padding-top: 10%;">
   <div class="parent"> 
-  <div class="child1" style="" >
-     <h4 style="text-align: left; color: #fff;font-family: 'Manrope', sans-serif !important;">As the world of</h4>
-     <h3 style="text-align: left; color: #0A004B;font-family: 'Manrope', sans-serif !important;">Finance and Technology</h3>
-     <h4 style="text-align: left; color: #fff;font-family: 'Manrope', sans-serif !important;">continues to evolve and change
-      <br>so does the industry(FinTech)<br>that surrounds it</h4>
-      <br><br>
-      <h4 style="text-align: left; color: #fff;font-family: 'Manrope', sans-serif !important;">The need for financial
-        <br>technology(FinTech) has never<br>been greater and we're dedicated<br>to helping you suceed in this<br>exciting new field</h4>
+    <div class="bg_image1">
+      <img src="assets/trophy_small.png" alt="" style="width: 80%;">
+    </div>
+  <div class="child1" style="padding-left: 10%;" >
+     <h5 style="text-align: left; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;line-height: 0.6;">As the world of</h5>
+     <h2 style="text-align: left; color: #0A004B;font-family: 'Playfair Display', serif;letter-spacing: 3px;line-height: 1.2;"><b>finance and technology</b></h2>
+     <h5 style="text-align: left; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;line-height: 1.2;">continues to evolve and change</h5>
+     <h5 style="text-align: left; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;line-height: 1.2;">so does the industry(FinTech)</h5>
+     <h5 style="text-align: left; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;line-height: 1.2;">that surrounds it.</h5>
+      <h5 style="text-align: left; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;padding-top: 5%;">The need for financial</h5>
+      <h5 style="text-align: left; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;line-height: 1.2;">technology(FinTech) has never</h5>
+      <h5 style="text-align: left; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;line-height: 1.2;">been greater and we're dedicated</h5>
+      <h5 style="text-align: left; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;line-height: 1.2;">to helping you suceed in this</h5>
+      <h5 style="text-align: left; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;line-height: 1.2;">exciting new field</h5>
 
-  </div>
+      <div class="bulb_img">
+        <img src="assets/bulb.png" alt=""  style="width: 100%;">
+      </div>
+    </div>
+
+    <div class="side_curve">
+      <img src="assets/side_curve.png" alt="" style="width: 100%;">
+    </div>
     <div class="child">
       <img src="assets/hero_.png" alt="" class="responsive">
+      <div class="signal">
+        <img src="assets/signal.png" alt=""  style="width: 100%;">
+      </div>
+    </div>
+    <div class="bg_image2">
+      <img src="assets/bg_logo_flower.png" alt="" style="width: 100%;" >
     </div>
     </div>
 </div>
-    <br><br><br><br>
-    <div>
-    <h1 class="mt-4" style="text-align: center;color: #fff;font-family: 'Playfair Display', serif;">Life as a Fintech Proffesional</h1>
+<!--Life as Fintech proffesional section-->
+    <div style="position: relative;">
+      <div class="side_curve2">
+        <img src="assets/side_curve2.png" alt="" style="width: 100%;">
+      </div>
+    <h1 class="mt-4" style="text-align: center;color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;font-size: 3.8em;">Life as a Fintech Proffesional</h1>
     <div class="banner-white-box mt-5">
+      <div class="star">
+        <img src="assets/star.png" alt="">
+      </div>
        <div class="container" style="padding: 2%;">
         <div class="container" style="padding: 4%;">
         <div class="row">
@@ -171,15 +221,15 @@
           <img src="assets/Icons.png">
           </div>
           <div class="col-sm-8" style="padding-top: 4%;">
-           <h4 style="color: purple;">Great Salary & Perks</h4>
-           <p>Easy to learn, high-paying and in a fast<br>growing industry</p>
+           <h4 style="color: #c04ae2;font-family: 'Playfair Display', serif">Great Salary & Perks</h4>
+           <p style="font-family: 'Manrope', sans-serif">Easy to learn, high-paying and in a fast<br>growing industry</p>
           </div>
           </div>
           <br>
           <div class="row" style="text-align: right;"> 
             <div class="col-sm-8 " style="padding-top: 4%;">
-              <h4 style="color: purple;">Accelerated Growth Path</h4>
-              <p>FinTech Offers tech expert collaboration, experience
+              <h4 style="color: #c04ae2;font-family: 'Playfair Display', serif">Accelerated Growth Path</h4>
+              <p style="font-family: 'Manrope', sans-serif">FinTech Offers tech expert collaboration, experience
                 <br>and fast career growth due to high demand</p>
             </div>
             <div class="col-sm">
@@ -192,15 +242,15 @@
               <img src="assets/Group 294.png">
               </div>
               <div class="col-sm-8" style="padding-top: 4%;">
-                <h4 style="color: purple;">Build a Solid Profile</h4>
-              <p>Exciting rewardinmg Fintech environment to<br>acheive career goals
+                <h4 style="color: #c04ae2;font-family: 'Playfair Display', serif">Build a Solid Profile</h4>
+              <p style="font-family: 'Manrope', sans-serif">Exciting rewardinmg Fintech environment to<br>acheive career goals
                 </p></div>
               </div>
               <br>
               <div class="row" style="text-align: right;">
                 <div class="col-sm-8" style="padding-top: 4%;">
-                  <h4 style="color: purple;">Achieve The Extra Ordinary</h4>
-              <p>FinTech's trillion dollar growth provides a fantastic career
+                  <h4 style="color: #c04ae2;font-family: 'Playfair Display', serif">Achieve The Extra Ordinary</h4>
+              <p style="font-family: 'Manrope', sans-serif">FinTech's trillion dollar growth provides a fantastic career
                 <br>oppurtunity for extraordinart achievements</p></div>
                 <div class="col-sm">
                   <img src="assets/Group 257.png">
@@ -214,51 +264,47 @@
  
 
   </div>
-  <br><br><br><br>
-  <br><br><br><br>
-  <div class="container">
-    <h4 style="text-align: center; color: #fff;">About Us</h4>
-  <h3 style="text-align: center; color: #fff;">Who we Are</h3>
+  <!--Who we are section-->
+  <div class="container" style="padding-top: 10%;">
+    <h3 style="text-align: center; color: #fff;font-family: 'Manrope', sans-serif;letter-spacing: 2px;">About Us</h3>
+  <h1 style="text-align: center; color: #fff;font-family: 'Playfair Display', serif;letter-spacing: 2px;font-size: 3.8em;">Who we are?</h1>
   <img class="mask_group" src="assets/Mask group.png" alt="">
   </div>
-  <div class="container pt-5" >
-    <table style="width: 70%; margin-left: 17.5%;">
-    <tr style="text-align: center;">
-      <td>
+  <div class="container pt-5" style="display: flex;width: 75%;">
+   
+      <div style="display: inline-block;width: 33%;height: 100%;">
         <div class="card">
           <div class="card-content">
             <img class="card-title" src="assets/card1.png">
-            <p class="card-para">Lorem ipsum dolor sit 
-              amet, consectetur adipiscing elit.</p>
+            <h3 class="card-para">FinVedic is a group of enthusiastic<br> professionals who are committed to<br> assisting professionals and students in <br>learning more about careers in<br> finance and financial technology.</h3>
           </div>
         </div>
-        </td>  
-        <td>
-        <div class="card">
-          <div class="card-content">
-            <img class="card-title" src="assets/card3.png">
-            <p class="card-para">Lorem ipsum dolor sit 
-              amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>  
-    </td>
-    <td>
+      </div>
+      <div style="display: inline-block;width: 33%;height: 100%; padding-left: 3%;">
         <div class="card">
           <div class="card-content">
             <img class="card-title" src="assets/card2.png">
-            <p class="card-para">Lorem ipsum dolor sit 
-              amet, consectetur adipiscing elit.</p>
+            <h3 class="card-para" style="padding-top: 4%;">Our platform offers exclusive labs,<br> user-friendly e-learning, and ongoing<br> support to help you understand<br> the business.</h3>
           </div>
-        </div>  
-    </td> 
-    </tr>
-  </table>
+        </div>
+      </div>
+      <div style="display: inline-block;width: 33%;padding-left: 3%;height: 100%;">
+        <div class="card">
+          <div class="card-content">
+            <img class="card-title" src="assets/card3.png">
+            <h3 class="card-para" style="padding-top: 4%;">We're here to help you reach<br> your career goals whether this<br> is your first job or your fifth.</h3>
+          </div>
+        </div>
+      </div>
+        
+         
+
   </div>
   <div class="container">
   <div class="White_Box">
     <div class="row">
       <div class="col-md-auto" style="margin-top: auto;margin-bottom: auto;">
-      <P>Visit our website to learn more about how we can help you land your ideal position<br>
+      <P style="font-family: 'Manrope', sans-serif ;padding-top:2%">Visit our website to learn more about how we can help you land your ideal position<br>
       with a competitive salary</P>
       </div>
       <div class="col-sm" style="text-align: right;padding-top: 1%;">
@@ -267,6 +313,7 @@
     </div>
   </div>
 </div>
+<!--Why Finvedic section-->
 <div>
 <img src="assets/uneven_banner.png" alt="" style="width: 100%;">
 <div class="why_finvedic" style="background-color: #0A004B;">
@@ -274,11 +321,11 @@
 
 <div class="student_slider">
   <div class="first_half_fv">
-    <h1 style="text-align: left; color: #fff;margin-left: 25%;">Why<br> FinVedic?</h1>
+    <h1 style="text-align: left; color: #fff;margin-left: 25%;font-family: 'Playfair Display', serif;letter-spacing: 2px;font-size: 3.8em;">Why<br> FinVedic?</h1>
     <img src="assets/student_img.png" alt="" style="width: 90%;margin-left: 5%;">
     <br><br><br><br><br><br><br>
     <div class="student_box">
-      <div class="student_box_text" style="margin-top: auto;margin-bottom: auto;margin-left: 5%;padding-top: 2%;font-size: 20px;width: 60%;">
+      <div class="student_box_text" style="margin-top: auto;margin-bottom: auto;margin-left: 5%;padding-top: 3%;font-size: 20px;width: 60%;font-family: 'Manrope', sans-serif ;">
         <p>Subscribe to our <br>newsletter to get new<br>updates on course</p>
       </div>
       <div class="student_box_button" style="margin-top: auto;margin-bottom: auto;width: 40%;">
@@ -295,8 +342,8 @@
     <div class="vs_text_one">
     <div class="os__wrapper">
       <div class="os__text-container">
-        <h3 class="os__text-item" style="text-align:left !important;">Specialised Courses</h3>
-        <p class="os__text-item" style="text-align:left !important;">Courses designated by Fintech industry experts for<br>real time exposure </p>
+        <h3 class="os__text-item" style="text-align:left !important;font-family: 'Playfair Display', serif !important;">Specialised Courses</h3>
+        <p class="os__text-item" style="text-align:left !important;font-family: 'Manrope', sans-serif ;">Courses designated by Fintech industry experts for<br>real time exposure </p>
         <p class="os__text-item">
         </p>
       </div>
@@ -305,8 +352,8 @@
     <div class="vs_text_two">
     <div class="os__wrapper">
       <div class="os__text-container">
-        <h3 class="os__text-item" style="text-align:left !important;">Live Projects</h3>
-        <p class="os__text-item" style="text-align:left !important;">Fintech developers developed our FinVedic labs, Which is <br>a company itself, serving thriving financial company</p>
+        <h3 class="os__text-item" style="text-align:left !important;font-family: 'Playfair Display', serif !important;">Live Projects</h3>
+        <p class="os__text-item" style="text-align:left !important;font-family: 'Manrope', sans-serif ;">Fintech developers developed our FinVedic labs, Which is <br>a company itself, serving thriving financial company</p>
         <p class="os__text-item">
         </p>
       </div>
@@ -315,10 +362,10 @@
   <div class="vs_text_three">
     <div class="os__wrapper">
       <div class="os__text-container">
-        <h3 class="os__text-item" style="text-align:left !important;">Placement Assistance</h3>
-        <p class="os__text-item" style="text-align:left !important;">Strategically partnered with top fintech<br>companies and banking global delivery centres<br>placement assistance</p>
-        <p class="os__text-item" style="text-align:left !important;">We coach them rigorously with<br>
-          <table class="os__text-item" style="color: #fff;">
+        <h3 class="os__text-item" style="text-align:left !important;font-family: 'Playfair Display', serif !important;">Placement Assistance</h3>
+        <p class="os__text-item" style="text-align:left !important;font-family: 'Manrope', sans-serif ;">Strategically partnered with top fintech<br>companies and banking global delivery centres<br>placement assistance</p>
+        <p class="os__text-item" style="text-align:left !important;font-family: 'Manrope', sans-serif ;">We coach them rigorously with<br>
+          <table class="os__text-item" style="color: #fff;font-family: 'Manrope', sans-serif ;">
             <tr>
               <td  style="text-align: left;">
                 ▸Mock Interview
@@ -392,11 +439,6 @@
 </tr>
 </table>
 -->
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
-<p>&nbsp</p>
-<p>&nbsp</p>
 <div class="relative_rocket">
   <div class="rocket_img">
     <img src="assets/Group 232.png" alt="" style="width: 100%;">
@@ -404,12 +446,12 @@
 <div class="rocket_section_part_a">
   <div class="first_half">
     <div class="head4">
-      <h2 style="color: #fff;">
-        let us see<br>how we do it
-      </h2>
+      <h1 style="color: #fff;font-family: 'Playfair Display', serif !important;">
+        Let us see<br>how we do it
+      </h1>
     </div>
     <div class="box2">
-      <h3>Capstone <br>Fintech Projects</h4><br>
+      <h3 style="font-family: 'Playfair Display', serif !important;">Capstone <br>Fintech Projects</h4><br>
         <h4>NextGen Fintech Infrastructure</h4><br>
         <h4>Internship on Fintech Projects</h4><br>
         <h4>AI Powered lab assistance</h4><br>
@@ -419,7 +461,7 @@
   </div>
   <div class="second_half">
     <div class="box1">
-      <h3>Fintech <br> Domain Sessions</h4><br>
+      <h3 style="font-family: 'Playfair Display', serif !important;">Fintech <br> Domain Sessions</h4><br>
       <h4>Trainers - Industry Experts</h4><br>
       <h4>Video library - recorded sessions</h4><br>
       <h4>Propietary content - Nextgen fintech<br>circullum</h4><br>
@@ -433,7 +475,7 @@
 <div class="rocket_section_part_a">
   <div class="first_half">
     <div class="box4">
-      <h3>Placement <br>Assistance</h4><br>
+      <h3 style="font-family: 'Playfair Display', serif !important;">Placement <br>Assistance</h4><br>
         <h4>Corporate Partnership</h4><br>
         <h4>Resume Service</h4><br>
         <h4>Mock Interviews</h4><br>
@@ -443,7 +485,7 @@
   </div>
   <div class="second_half">
     <div class="box3">
-      <h3>Our <br>Offerings</h4><br>
+      <h3 style="font-family: 'Playfair Display', serif !important;">Our <br>Offerings</h4><br>
       <h4>66 Months access to<br>Gurukul Portal that includes : </h4><br>
       <h4>Hand Books - Video Lectures</h4><br>
       <h4>Unlimted access to fintech lab</h4><br>
@@ -479,10 +521,10 @@
 
   </div>
   <div class="certificate_text">
-    <h4>Certificate of Authentication</h4>
-    <p>Online authentication of certification to the legitimacy of digital identities</p>
+    <h4 style="font-family: 'Playfair Display', serif;letter-spacing: 2px;">Certificate of Authentication</h4>
+    <p style="font-family: 'Manrope', sans-serif ;padding-top: 1%;">Online authentication of certification to the legitimacy of digital identities</p>
     <div class="inputb">
-      <input type="text" style="width: 50%;border-radius: 15px;" placeholder="Enter registered mail id to check authentication" >
+      <input type="text" style="width: 50%;border-radius: 25px;height: 45px;" placeholder="Enter registered mail id to check authentication" >
       <button class="button_enroll">check here</button>
     </div>
   </div>
@@ -497,11 +539,11 @@
     <div class="book_container">
   
   
-      <input type="radio" name="slider" class="d-none" id="s1" checked>
-      <input type="radio" name="slider" class="d-none" id="s2">
-      <input type="radio" name="slider" class="d-none" id="s3">
-      <input type="radio" name="slider" class="d-none" id="s4">
-      <input type="radio" name="slider" class="d-none" id="s5">
+      <input type="radio" name="slider" class="d-none" id="s1" value="s1" checked>
+      <input type="radio" name="slider" class="d-none" id="s2" value="s2">
+      <input type="radio" name="slider" class="d-none" id="s3" value="s3">
+      <input type="radio" name="slider" class="d-none" id="s4" value="s4">
+      <input type="radio" name="slider" class="d-none" id="s5" value="s5">
   
       <div class="books_cards">
         <label for="s1" id="slide1">
@@ -544,6 +586,7 @@
 </div>
 <br><br><br><br>
 <br><br><br><br>
+<!--
 <div class="s1 boxy" style="width:100%">
     <img src="image-1.jpg" alt="">
 </div>
@@ -559,60 +602,197 @@
 <div class ="s5 boxy" style="width:100%">
   <img src="image-5.jpg" alt="">
 </div>
-
+-->
 
 <div class="sucess_story_box">
   <br><br><br>
-  <div class="container" style="text-align: center;">
-    <h4>Reviews</h2>
-    <h2>Our Success Stories</h2>
+  <div class="container" style="text-align: center;color: #fff;">
+    <p style="font-family: 'Manrope', sans-serif">Reviews</p>
+    <h1 style="font-family: 'Playfair Display', serif;">Our Success Stories</h1>
     </div>
   <div class="rangeslider">
     <div class="range_slider_container">
       <div class="slider_carousel">
-        <div class="item"></div>
-        <div class="item" style="width: 230px;"></div>
-        <div class="item"></div>
-        <div class="item" style="width: 100px;"></div>
-        <div class="item"></div>
-        <div class="item" style="width: 400;"></div>
-        <div class="item"></div>
+
+        <div class="item" style="position: relative;">
+          <div class="image_card">
+          <div style="display: inline-block;">
+            <img class="card_abs" src="assets/paul_rodd_dummy.jpg" alt="" style="width: 80px;height:80px ;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+            <h6 class="card_abs" style="width: 100%;text-align: center;">Paul Rudd</h6>
+            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+          </div>
+          <div style="display: inline-block;">
+              <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+              <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur vel fugiat aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" style="width: 7.3%;height: 200px">
+        <img src="assets/Chris_Evans_SDCC_2014.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+        </div>
+
+        <div class="item" style="position: relative;">
+          <div class="image_card">
+          <div style="display: inline-block;">
+            <img class="card_abs" src="assets/Chris_Evans_SDCC_2014.jpg" alt="" style="width: 80px;height:80px;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+            <h6 class="card_abs" style="width: 100%;text-align: center;">Chris Evans</h6>
+            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+          </div>
+          <div style="display: inline-block;">
+              <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+              <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur vel fugiat aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" style="width: 7.3%;height: 200px">
+          <img src="assets/rd_jr_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+          </div>
+        
+          <div class="item" style="position: relative;">
+            <div class="image_card">
+            <div style="display: inline-block;">
+              <img class="card_abs" src="assets/rd_jr_dummy.jpg" alt="" style="width: 80px;height: 80px; margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+              <h6 class="card_abs" style="width: 100%;text-align: center;">Robert Jr</h6>
+              <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+            </div>
+            <div style="display: inline-block;">
+                <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur vel fugiat aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" style="width: 7.3%;height: 200px">
+            <img src="assets/Benedict_Cumberbatch_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+            </div>
+
+            <div class="item" style="position: relative;">
+              <div class="image_card">
+              <div style="display: inline-block;">
+                <img class="card_abs" src="assets/Benedict_Cumberbatch_dummy.jpg" alt="" style="width: 80px;height: 80px;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+                <h6 class="card_abs" style="width: 100%;text-align: center;">Benedict</h6>
+                <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+              </div>
+              <div style="display: inline-block;">
+                  <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                  <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur vel fugiat aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item" style="width: 7.3%;height: 200px">
+              <img src="assets/paul_rodd_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+              </div>
+
       </div>
       <div class="slider_carousel2">
-        <div class="item"></div>
-        <div class="item" style="width: 120px;"></div>
-        <div class="item"></div>
-        <div class="item" style="width: 100px;"></div>
-        <div class="item"></div>
-        <div class="item" style="width: 400;"></div>
-        <div class="item"></div>
+        
+        <div class="item" style="width: 7.3%;height: 200px">
+          <img src="assets/Benedict_Cumberbatch_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+        </div>
+
+        <div class="item" style="position: relative;">
+          <div class="image_card">
+          <div style="display: inline-block;">
+            <img class="card_abs" src="assets/Benedict_Cumberbatch_dummy.jpg" alt="" style="width: 80px;height: 80px;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+            <h6 class="card_abs" style="width: 100%;text-align: center;">Benedict</h6>
+            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+          </div>
+          <div style="display: inline-block;">
+              <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+              <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur vel fugiat aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item" style="width: 7.3%;height: 200px">
+          <img src="assets/paul_rodd_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+        </div>
+
+        <div class="item" style="position: relative;">
+          <div class="image_card">
+          <div style="display: inline-block;">
+            <img class="card_abs" src="assets/paul_rodd_dummy.jpg" alt="" style="width: 80px;height:80px ;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+            <h6 class="card_abs" style="width: 100%;text-align: center;">Paul Rudd</h6>
+            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+          </div>
+          <div style="display: inline-block;">
+              <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+              <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur vel fugiat aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="item" style="width: 7.3%;height: 200px">
+          <img src="assets/Chris_Evans_SDCC_2014.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+          </div>
+  
+          <div class="item" style="position: relative;">
+            <div class="image_card">
+            <div style="display: inline-block;">
+              <img class="card_abs" src="assets/Chris_Evans_SDCC_2014.jpg" alt="" style="width: 80px;height:80px;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+              <h6 class="card_abs" style="width: 100%;text-align: center;">Chris Evans</h6>
+              <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+            </div>
+            <div style="display: inline-block;">
+                <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur vel fugiat aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" style="width: 7.3%;height: 200px">
+            <img src="assets/rd_jr_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+            </div>
+
+
+          <div class="item" style="position: relative;">
+            <div class="image_card">
+            <div style="display: inline-block;">
+              <img class="card_abs" src="assets/rd_jr_dummy.jpg" alt="" style="width: 80px;height: 80px; margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+              <h6 class="card_abs" style="width: 100%;text-align: center;">Robert Jr</h6>
+              <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+            </div>
+            <div style="display: inline-block;">
+                <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur vel fugiat aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+              </div>
+            </div>
+          </div>
+
+
       </div>
       <input class="range-slider" type="range" value="0" max="100"/>
       
     </div>
   </div>
-  <br><br><br><br>
-  <div class="container" style="text-align: center;">
-    <h1>About Finvedic</h1>
-    <p>By utilising the technological advances such as AI and Blockchain.<br>
+  <div class="container" style="text-align: center;padding-top: 8%;">
+    <h1 style="font-family: 'Playfair Display', serif;color: #fff;">About Finvedic</h1>
+    <p style="font-family: 'Manrope', sans-serif; color: #fff;">By utilising the technological advances such as AI and Blockchain.<br>
       Fintech companies are revolutionizing the way people interact with their
       <br>finances by being part of the:</p>
   </div>
-  <div class="m-scroll" style="height: 100px;opacity: 50%;">
+  <div class="m-scroll" style="height: 100px;opacity: 50%;height: 200px;">
     <div class="m-scroll__title">
-      <div>
-        <h1>
-          <h2>THE FINTECH 250</a>
-          <h2>&nbsp THE FINTECH 250 &nbsp THE FINTECH 250  &nbsp THE FINTECH 250</h2>
-          <h2>&nbsp THE FINTECH 250 &nbsp THE FINTECH 250  &nbsp THE FINTECH 250 </h2>
-          <h2>&nbsp THE FINTECH 250 &nbsp THE FINTECH 250  &nbsp THE FINTECH 250 </h2>
-        </h1>
+      <div style="font-family: 'Playfair Display', serif;color: lightgrey;opacity: 50%;padding-top: 2%;">
+        <h1 ><b>
+          <a class="text_white" style="font-size: 3vw;">The Fintech 250</a>
+          <a class="text_white" style="font-size: 3vw;">&nbsp The Fintech 250 &nbsp The Fintech 250  &nbsp The Fintech 250</a>
+          <a class="text_white" style="font-size: 3vw;">&nbsp The Fintech 250 &nbsp The Fintech 250  &nbsp The Fintech 250</a>
+          <a class="text_white" style="font-size: 3vw;">&nbsp The Fintech 250 &nbsp The Fintech 250  &nbsp The Fintech 250</a>
+        </b></h1>
       </div>
     </div>
+  </div>
+  <div style="padding-top: 1%;">
+
   </div>
   <div class="m-scroll" style="background-color: #fff;">
     <div class="m-scroll__title">
-      <div>
+      <div style="font-family: 'Playfair Display', serif;color: #0A004B;">
         <h1>
           <h4>&nbsp The most promising fintech companies of 2022 </h4>
           <h4>&nbsp The most promising fintech companies of 2022 </h4>
@@ -622,26 +802,26 @@
       </div>
     </div>
   </div>
-  <div class="container" style="text-align: center;">
-  <p>Source: www.cbinsights.com/research/report/top-fintech-startups-2022</p>
+  <div class="container" style="text-align: center;padding-top: 2%;color: #fff;">
+  <p>Source: <a href="https://www.cbinsights.com/research/report/top-fintech-startups-2022"> www.cbinsights.com/research/report/top-fintech-startups-2022 </a></p>
   </div>
-  <div class="container" style="text-align: center; padding-top: 2%;">
+  <div class="container" style="text-align: center; padding-top: 2%;color: #c04ae2;font-family: 'Playfair Display', serif">
     <div class="company_logo_slider" style="margin-left: 10%;">
-      <h3 style="padding-top: 2%;">Payments processing and Network</h3>
+      <h3 style="padding-top: 4%;">Payments processing and Network</h3>
       <div class="image-carousel">
           <div class="logo-container">
             <div class="left-arrow" style="display: none;">&lt</div>
             <div class="img-logo-container">
               <img
-                src="image-1.jpg"
+                src="assets/logos_of_diff_companies.png"
                 alt="" width="100%">
-              <img src="image-2.jpg"
+              <img src="assets/logos_of_diff_companies.png"
               alt="" width="100%">
-              <img src="image-3.jpg"
+              <img src="assets/logos_of_diff_companies.png"
               alt="" width="100%">
-              <img src="image-4.jpg"
+              <img src="assets/logos_of_diff_companies.png"
               alt="" width="100%">
-              <img src="image-5.jpg"
+              <img src="assets/logos_of_diff_companies.png"
               alt="" width="100%">
             </div>
             <div class="right-arrow" style="display: none;">&gt</div>
@@ -652,29 +832,29 @@
          </diV>
   </div>
   <div style="padding-top: 7%;">
-  <div class="footer-image" style="padding-top: 7%;">
+  <div class="footer-image" style="padding-top: 5%;">
     <div class="container" style="text-align: center;color: #fff;">
-      <h4>Follow Us</h4>
+      <p style="font-family: 'Playfair Display', serif;">Follow Us</p>
       <div style="display: flex;">
-          <div  style="margin-left: auto;"><h1>LinkedIN</h1></div>
-          <div style="margin-left: auto;"><h1>Facebook</h1></div>
-          <div style="margin-right: auto;margin-left: auto;"><h1>Instagram</h1></div>
-          <div style="margin-right: auto;"><h1>Threads</h1></div>
+          <div  style="margin-left: auto;"><h1 class="text_gradient">LinkedIN</h1></div>
+          <div style="margin-left: auto;"><h1 class="text_gradient">Instagram</h1></div>
+          <div style="margin-right: auto;margin-left: auto;"><h1 class="text_gradient">Facebook</h1></div>  
+          <div style="margin-right: auto;"><h1 class="text_gradient">Threads</h1></div>
       </div>
     </div>
     <div class="container" style="width: 100% !important;display:flex;padding-top: 5%;">
-        <div class="footer1">
+        <div class="footer1" style="width: 30%;">
           <img src="assets/logo_long.svg" alt="">
           <p style="color: #fff; padding-top: 5%;" >RENT A DESK,Hitech City RAM SVR,Plot No4/2<br>Sector 1,Madhapur,HuDA Techno Enclave,<br>HITECH City,Hyderabad,Telangana 500081</p>
           <p style="color: #fff; padding-top: 5%;" >+91 9908011843 &nbsp support@finvedic.com</p>
         </div>
-        <div class="footer2" style="display: flex;color: #fff;margin-left: auto;">
-            <div class="partA">
+        <div class="footer2" style="display: flex;color: #fff;margin-left: auto;width: 15%;">
+            <div class="partA" style="margin-left: auto;">
               <p>Home</p>
               <p>Courses</p>
               <p>Bootcamp</p>
             </div>
-            <div class="partB">
+            <div class="partB" style="width: fit-content;margin-left: auto;margin-right: auto;">
               <p>External</p>
               <p>About Us</p>
               <p>Career</p>
@@ -876,7 +1056,7 @@ setInterval(changeToRightImage, 3000);
 <script>
 $(document).ready(function(){
     $('input[type="radio"]').click(function(){
-        var inputValue = $(this).attr("id");
+        var inputValue = $(this).attr("value");
         var targetBox = $("." + inputValue);
         $(".boxy").not(targetBox).hide();
         $(targetBox).show();
